@@ -13,5 +13,7 @@ For the 15 instructions mentioned here, the first 7 bits in each instruction can
 - The first element of the register always takes the value 0.
 ( register_obegi[0] = 32'b00000000_00000000_00000000_00000000; )
 - It is obtained in 3 steps after each command by keeping 2 different variables for the ps value.
-1) counter_next = counter + 4 | 2) counter <= counter_next | 3) ps <= counter_next
+
+(1) counter_next = counter + 4 | (2) counter <= counter_next | (3) ps <= counter_next
+
 The purpose here is to use the counter with the ps value to show the next instruction.
